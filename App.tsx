@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-maroon-dark/80 backdrop-blur-xl py-4' : 'bg-transparent py-8'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -127,7 +127,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden sacred-grid bg-maroon-dark">
-      <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 lg:gap-24 items-center relative z-10 py-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 w-full grid lg:grid-cols-2 gap-10 lg:gap-16 items-center relative z-10 py-16 md:py-20">
         
         {/* Left Content: Text */}
         <motion.div
@@ -203,7 +203,7 @@ const Hero = () => {
 
 const AuthoritySection = () => {
   return (
-    <section id="book" className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
+    <section id="book" className="py-20 md:py-24 px-4 md:px-6 bg-maroon-dark relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -230,7 +230,7 @@ const AuthoritySection = () => {
               to build an inner fortress that no external chaos can penetrate.
             </p>
           </div>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-10 md:mt-12 flex justify-center">
             <div className="w-24 h-px bg-gold/30" />
           </div>
         </motion.div>
@@ -334,9 +334,9 @@ const ChaptersSection = () => {
   ];
 
   return (
-    <section id="chapters" className="py-32 px-6 bg-maroon-dark relative overflow-hidden border-y border-gold/10">
+    <section id="chapters" className="py-20 md:py-24 px-4 md:px-6 bg-maroon-dark relative overflow-hidden border-y border-gold/10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-20 gap-8">
           <div className="max-w-2xl">
             <span className="text-gold uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Sacred Journey</span>
             <h2 className="text-5xl md:text-8xl font-serif leading-none text-parchment">The Ten Maha Mantras</h2>
@@ -431,9 +431,9 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-32 px-6 bg-parchment text-maroon-dark">
+    <section id="benefits" className="py-20 md:py-24 px-4 md:px-6 bg-parchment text-maroon-dark">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 md:mb-20">
           <span className="text-gold-muted uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Transformation</span>
           <h2 className="text-5xl md:text-7xl font-serif">What You Will Gain</h2>
         </div>
@@ -465,8 +465,8 @@ const BenefitsSection = () => {
 
 const PreviewSection = () => {
   return (
-    <section id="preview" className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+    <section id="preview" className="py-20 md:py-24 px-4 md:px-6 bg-maroon-dark relative overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
         <div className="flex-1">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -496,9 +496,9 @@ const PreviewSection = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative z-10 aspect-[4/5] bg-parchment rounded-lg shadow-2xl p-12 overflow-hidden"
+            className="relative z-10 aspect-[4/5] bg-parchment rounded-lg shadow-2xl p-8 md:p-10 overflow-hidden"
           >
-            <div className="h-full border border-maroon-dark/5 p-8 flex flex-col justify-between">
+            <div className="h-full border border-maroon-dark/5 p-6 md:p-8 flex flex-col justify-between">
               <div className="flex justify-between items-start">
                 <span className="text-[10px] uppercase tracking-widest text-maroon-dark/40">Chapter 04</span>
                 <DharmaChakra className="w-6 h-6 text-gold/40" />
@@ -530,8 +530,8 @@ const PreviewSection = () => {
 
 const AuthorSection = () => {
   return (
-    <section id="author" className="py-32 px-6 bg-parchment text-maroon-dark">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+    <section id="author" className="py-20 md:py-24 px-4 md:px-6 bg-parchment text-maroon-dark">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
         <div className="w-full md:w-1/3">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -596,7 +596,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-32 px-6 bg-maroon-dark">
+    <section className="py-20 md:py-24 px-4 md:px-6 bg-maroon-dark">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review, i) => (
@@ -606,7 +606,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-10 glass rounded-3xl"
+              className="p-8 glass rounded-3xl"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(review.stars)].map((_, i) => (
@@ -650,12 +650,12 @@ const PreOrderSection = () => {
   }, []);
 
   return (
-    <section className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
+    <section className="py-20 md:py-24 px-4 md:px-6 bg-maroon-dark relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <LotusGeometry className="absolute -top-20 -right-20 w-[600px] h-[600px] text-gold" />
       </div>
 
-      <div className="max-w-5xl mx-auto glass rounded-[40px] p-12 md:p-24 text-center relative z-10 border-gold/20">
+      <div className="max-w-5xl mx-auto glass rounded-[40px] p-10 md:p-16 text-center relative z-10 border-gold/20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -665,12 +665,12 @@ const PreOrderSection = () => {
             Limited First Edition
           </span>
           <h2 className="text-5xl md:text-8xl font-serif mb-8 text-parchment">Reserve Your Legacy</h2>
-          <p className="text-xl text-parchment/60 font-light mb-16 max-w-2xl mx-auto">
+          <p className="text-xl text-parchment/60 font-light mb-10 md:mb-12 max-w-2xl mx-auto">
             Pre-order the premium hardcover edition today and receive the exclusive 
             "Sacred Sound" digital companion and a hand-signed bookmark.
           </p>
 
-          <div className="flex justify-center gap-4 md:gap-12 mb-16">
+          <div className="flex justify-center gap-4 md:gap-10 mb-10 md:mb-12">
             {Object.entries(timeLeft).map(([label, value]) => (
               <div key={label} className="flex flex-col items-center">
                 <span className="text-4xl md:text-6xl font-serif text-gold mb-2">{value.toString().padStart(2, '0')}</span>
@@ -698,7 +698,7 @@ const PreOrderSection = () => {
 
 const FinalImpact = () => {
   return (
-    <section className="py-48 px-6 bg-maroon-dark relative flex items-center justify-center text-center">
+    <section className="py-28 md:py-32 px-4 md:px-6 bg-maroon-dark relative flex items-center justify-center text-center">
       <div className="absolute inset-0 opacity-5">
         <MandalaGrid className="w-full h-full text-gold" />
       </div>
@@ -713,7 +713,7 @@ const FinalImpact = () => {
           “This is not just a book. <br />
           It is a discipline system for your mind.”
         </h2>
-        <div className="mt-16 flex justify-center">
+        <div className="mt-10 md:mt-12 flex justify-center">
           <LotusGeometry className="w-12 h-12 text-gold/20" />
         </div>
       </motion.div>
@@ -732,9 +732,9 @@ const GlossarySection = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-maroon-dark/50">
+    <section className="py-16 md:py-20 px-4 md:px-6 bg-maroon-dark/50">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-10 md:mb-12">
           <span className="text-gold uppercase tracking-[0.3em] text-[10px] mb-2 block font-bold">Wisdom Lexicon</span>
           <h2 className="text-4xl font-serif text-parchment">Key Sanskrit Terms</h2>
         </div>
@@ -759,15 +759,15 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-20 px-6 bg-maroon-dark border-t border-white/5">
+    <footer className="py-14 md:py-16 px-4 md:px-6 bg-maroon-dark border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 mb-10 md:mb-12">
           <div className="flex items-center gap-3">
             <DharmaChakra className="w-8 h-8 text-gold" />
             <span className="font-serif text-xl tracking-widest uppercase text-parchment">Maha Mantras</span>
           </div>
           
-          <div className="flex gap-12">
+          <div className="flex gap-8 md:gap-10">
             {['Privacy', 'Terms', 'Shipping', 'Contact'].map((item) => (
               <a key={item} href="#" className="text-sm uppercase tracking-wider text-parchment/50 hover:text-gold transition-colors">
                 {item}
