@@ -2,18 +2,21 @@ import { motion } from "motion/react";
 
 export const DharmaChakra = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 100 100" className={className} fill="none" stroke="currentColor" strokeWidth="0.5">
+    <circle cx="50" cy="50" r="48" strokeWidth="0.2" />
     <circle cx="50" cy="50" r="45" />
-    <circle cx="50" cy="50" r="8" />
-    {[...Array(8)].map((_, i) => (
+    <circle cx="50" cy="50" r="12" />
+    <circle cx="50" cy="50" r="10" strokeWidth="0.2" />
+    {[...Array(24)].map((_, i) => (
       <line
         key={i}
         x1="50"
         y1="50"
-        x2={50 + 45 * Math.cos((i * Math.PI) / 4)}
-        y2={50 + 45 * Math.sin((i * Math.PI) / 4)}
+        x2={50 + 45 * Math.cos((i * Math.PI) / 12)}
+        y2={50 + 45 * Math.sin((i * Math.PI) / 12)}
+        opacity={i % 3 === 0 ? 1 : 0.3}
       />
     ))}
-    <circle cx="50" cy="50" r="40" strokeDasharray="1 3" />
+    <circle cx="50" cy="50" r="40" strokeDasharray="1 2" opacity="0.5" />
   </svg>
 );
 

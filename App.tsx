@@ -22,6 +22,7 @@ import {
   Linkedin
 } from 'lucide-react';
 import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './components/SacredArt';
+import authorImage from './images/author-image.png';
 
 // --- Components ---
 
@@ -176,16 +177,38 @@ const Hero = () => {
             className="relative w-64 h-96 md:w-80 md:h-[480px] group"
           >
             <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full group-hover:bg-gold/30 transition-all duration-700" />
-            <div className="relative w-full h-full bg-maroon border border-gold/30 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] rounded-sm overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+            <div className="relative w-full h-full bg-maroon border border-gold/30 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] rounded-sm overflow-hidden flex flex-col items-center pt-20 pb-16 px-8 text-center">
               <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/dark-leather.png')]"></div>
-              <div className="relative w-24 h-24 flex items-center justify-center mb-8">
-                <DharmaChakra className="w-24 h-24 text-gold absolute z-10" />
-                <h2 className="font-serif text-sm text-parchment relative z-20 tracking-[0.1em]">LIFE-CHANGING</h2>
+              
+              {/* Sacred Circle with Image - Positioned in the upper third */}
+              <div className="relative w-32 h-32 flex items-center justify-center mb-16">
+                <div className="absolute inset-0 rounded-full overflow-hidden border border-gold/30 z-0 shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+                  <img 
+                    src={authorImage} 
+                    alt="Sacred" 
+                    className="w-full h-full object-cover opacity-60 scale-125" 
+                  />
+                  <div className="absolute inset-0 bg-maroon/20 mix-blend-multiply"></div>
+                </div>
+                <DharmaChakra className="w-full h-full text-gold absolute z-10 opacity-80" />
+                <div className="relative z-20 pointer-events-none">
+                  <h2 className="font-serif text-[11px] leading-tight text-parchment tracking-[0.25em] font-bold">
+                    LIFE-<br />CHANGING
+                  </h2>
+                </div>
               </div>
-              <h2 className="font-serif text-4xl text-gold-gradient font-bold relative z-10">MAHA</h2>
-              <h2 className="font-serif text-4xl text-gold-gradient font-bold relative z-10 tracking-[0.2em]">MANTRAS</h2>
-              <div className="absolute bottom-8 left-0 w-full h-px bg-gold/20" />
-              <span className="absolute bottom-4 text-[8px] uppercase tracking-[0.3em] text-gold/60 relative z-10">The Science of Living the Gita</span>
+
+              <div className="space-y-4 mt-auto mb-auto">
+                <h2 className="font-serif text-5xl text-gold-gradient font-bold relative z-10 tracking-widest">MAHA</h2>
+                <h2 className="font-serif text-5xl text-gold-gradient font-bold relative z-10 tracking-[0.3em]">MANTRAS</h2>
+              </div>
+
+              <div className="mt-auto pt-8">
+                <div className="w-24 h-px bg-gold/20 mx-auto mb-4" />
+                <span className="text-[10px] uppercase tracking-[0.4em] text-gold/60 relative z-10 block">
+                  The Science of Living the Gita
+                </span>
+              </div>
             </div>
           </motion.div>
         </div>
