@@ -27,7 +27,6 @@ import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './component
 import authorImage from './images/author-image.png';
 import bookCover from './images/book-cover.png';
 import authorPortrait from './images/author-portrait.png';
-import whatsappCover from './images/whatsapp-cover.jpeg';
 
 // --- Components ---
 
@@ -185,11 +184,6 @@ const Hero = () => {
             className="relative w-64 h-auto md:w-96"
           >
             <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full" />
-            <img
-              src={whatsappCover}
-              alt="Maha Mantras Alternate Cover"
-              className="absolute -left-10 top-10 w-full h-auto rotate-[-8deg] opacity-70 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.55)] rounded-sm"
-            />
             <img 
               src={bookCover} 
               alt="Maha Mantras Book Cover" 
