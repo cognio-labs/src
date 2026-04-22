@@ -27,6 +27,7 @@ import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './component
 import authorImage from './images/author-image.png';
 import bookCover from './images/book-cover.png';
 import authorPortrait from './images/author-portrait.png';
+import whatsappCover from './images/whatsapp-cover.jpeg';
 
 // --- Components ---
 
@@ -184,6 +185,11 @@ const Hero = () => {
             className="relative w-64 h-auto md:w-96"
           >
             <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full" />
+            <img
+              src={whatsappCover}
+              alt="Maha Mantras Alternate Cover"
+              className="absolute -left-10 top-10 w-full h-auto rotate-[-8deg] opacity-70 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.55)] rounded-sm"
+            />
             <img 
               src={bookCover} 
               alt="Maha Mantras Book Cover" 
@@ -547,7 +553,7 @@ const AuthorSection = () => {
           >
             <img 
               src={authorPortrait} 
-              alt="Sākṣhī Shree" 
+              alt="Sakshi Shree" 
               className="w-full h-full object-cover object-center"
             />
           </motion.div>
@@ -559,7 +565,7 @@ const AuthorSection = () => {
             viewport={{ once: true }}
           >
             <span className="text-gold-muted uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
-            <h2 className="text-5xl md:text-7xl font-sans mb-8">Sākṣhī Shree</h2>
+            <h2 className="text-5xl md:text-7xl font-sans font-normal tracking-normal mb-8">Sakshi Shree</h2>
             <p className="text-xl text-maroon-dark/70 font-light leading-relaxed mb-8">
               Born Rām Krishna Upādhyāya, Sākṣhī Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
               Mentored by Swami Sudarshanacharya Ji Maharaj, he bridges the gap between ancient Himalayan wisdom and the modern boardroom.
@@ -688,7 +694,7 @@ const PreOrderSection = () => {
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-baseline gap-4">
               <span className="text-parchment/40 line-through text-2xl font-light">₹2,499</span>
-              <span className="text-parchment text-5xl font-serif">₹1,499</span>
+              <span className="text-parchment text-5xl font-serif">₹1,000</span>
             </div>
             <button className="w-full md:w-auto px-16 py-6 bg-gold text-maroon-dark font-bold uppercase tracking-[0.2em] rounded-full shadow-2xl shadow-gold/20">
               Reserve Your Copy Now
@@ -716,7 +722,7 @@ const FinalImpact = () => {
         transition={{ duration: 1.5 }}
         className="max-w-4xl relative z-10"
       >
-        <h2 className="text-4xl md:text-7xl font-serif italic leading-tight text-parchment">
+        <h2 className="text-2xl md:text-5xl font-serif italic leading-snug text-parchment max-w-3xl mx-auto">
           “This is not just a book. <br />
           It is a discipline system for your mind.”
         </h2>
@@ -776,7 +782,7 @@ const Footer = () => {
           
           <div className="flex gap-12">
             {['Privacy', 'Terms', 'Shipping', 'Contact'].map((item) => (
-              <a key={item} href="#" className="text-[10px] uppercase tracking-widest text-parchment/40 hover:text-gold transition-colors">
+              <a key={item} href="#" className="text-sm uppercase tracking-wider text-parchment/50 hover:text-gold transition-colors">
                 {item}
               </a>
             ))}
@@ -798,7 +804,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-parchment/20">
+          <p className="text-sm uppercase tracking-[0.25em] text-parchment/30">
             © 2026 Maha Mantras Publishing. All Rights Reserved.
           </p>
         </div>
