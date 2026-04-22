@@ -730,7 +730,7 @@ const FinalImpact = () => {
 
 const GlossarySection = () => {
   const terms = [
-    { term: "Sākṣhī", meaning: "The inner witness; awareness that observes without judgement." },
+    { term: "Sakshi", meaning: "The inner witness; awareness that observes without judgement." },
     { term: "Svadharma", meaning: "One’s own right path; what is truly ‘yours to do’." },
     { term: "Nishkama Karma", meaning: "Action performed without clinging to results; pure doing." },
     { term: "Gunatita", meaning: "One who lives beyond the gunas; free of compulsive reactions." },
