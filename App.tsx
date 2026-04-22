@@ -681,8 +681,7 @@ const PreOrderSection = () => {
 
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-baseline gap-4">
-              <span className="text-parchment/40 line-through text-2xl font-light">₹2,499</span>
-              <span className="text-parchment text-5xl font-serif">₹1,000</span>
+              <span className="text-parchment text-5xl font-serif">₹499</span>
             </div>
             <button className="w-full md:w-auto px-16 py-6 bg-gold text-maroon-dark font-bold uppercase tracking-[0.2em] rounded-full shadow-2xl shadow-gold/20">
               Reserve Your Copy Now
