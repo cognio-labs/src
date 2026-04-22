@@ -709,7 +709,7 @@ const FinalImpact = () => {
         transition={{ duration: 1.5 }}
         className="max-w-4xl relative z-10"
       >
-        <h2 className="text-2xl md:text-5xl font-serif italic leading-snug text-parchment max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-6xl lg:text-7xl font-serif italic leading-tight text-parchment max-w-3xl mx-auto">
           “This is not just a book. <br />
           It is a discipline system for your mind.”
         </h2>
