@@ -138,8 +138,7 @@ const Hero = () => {
         >
           <span className="text-gold uppercase tracking-[0.5em] text-xs mb-6 block font-bold">The Sacred Discipline</span>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif mb-8 tracking-tight leading-[0.9] text-parchment">
-            Maha <br />
-            <span className="text-gold-gradient italic">Mantras</span>
+            Maha <span className="text-gold-gradient italic">Mantras</span>
           </h1>
           <p className="text-xl md:text-2xl text-parchment/60 font-light tracking-wide mb-12 max-w-lg">
             A structural blueprint for your consciousness. Discipline your mind. Awaken inner power.
