@@ -559,9 +559,9 @@ const AuthorSection = () => {
             viewport={{ once: true }}
           >
             <span className="text-gold-muted uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
-            <h2 className="text-5xl md:text-7xl font-sans font-normal tracking-normal mb-8">Sakshi Shree</h2>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8">Sakshi Shree</h2>
             <p className="text-xl text-maroon-dark/70 font-light leading-relaxed mb-8">
-              Born Rām Krishna Upādhyāya, Sākṣhī Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
+              Born Rām Krishna Upādhyāya, Sakshi Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
               Mentored by Swami Sudarshanacharya Ji Maharaj, he bridges the gap between ancient Himalayan wisdom and the modern boardroom.
             </p>
             <p className="text-lg text-maroon-dark/60 font-light leading-relaxed mb-12 italic border-l-4 border-gold/20 pl-8">
