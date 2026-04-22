@@ -7,21 +7,16 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { 
   Facebook,
-  ChevronRight, 
   BookOpen, 
   Shield, 
   Zap, 
   Compass, 
   Anchor, 
-  ArrowRight,
-  Clock,
   Star,
   Menu,
   X,
   Youtube,
-  Instagram,
-  Twitter,
-  Linkedin
+  Instagram
 } from 'lucide-react';
 import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './components/SacredArt';
 import authorImage from './images/author-image.png';
