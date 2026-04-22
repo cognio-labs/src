@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { 
+  Facebook,
   ChevronRight, 
   BookOpen, 
   Shield, 
@@ -17,6 +18,7 @@ import {
   Star,
   Menu,
   X,
+  Youtube,
   Instagram,
   Twitter,
   Linkedin
@@ -25,22 +27,6 @@ import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './component
 import authorImage from './images/author-image.png';
 import bookCover from './images/book-cover.png';
 import authorPortrait from './images/author-portrait.png';
-import { 
-  Facebook,
-  Youtube,
-  Instagram,
-  ChevronRight, 
-  BookOpen, 
-  Shield, 
-  Zap, 
-  Compass, 
-  Anchor, 
-  ArrowRight,
-  Clock,
-  Star,
-  Menu,
-  X
-} from 'lucide-react';
 
 // --- Components ---
 
