@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { DharmaChakra, LotusGeometry, SoundWave, MandalaGrid } from './components/SacredArt';
 import authorImage from './images/author-image.png';
-import bookCover from './images/book-mockup-final.png';
+import bookCover from './images/book-cover-new.jpeg';
 import authorPortrait from './images/author-portrait.png';
 
 // --- Components ---
