@@ -164,7 +164,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Content: Book & Mandala */}
-        <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div className="relative order-1 lg:order-2 flex justify-center lg:justify-center">
           {/* Mandala - Now localized behind the book */}
           <motion.div 
             style={{ y: y1, rotate }}
