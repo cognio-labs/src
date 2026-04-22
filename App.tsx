@@ -533,18 +533,18 @@ const AuthorSection = () => {
     <section id="author" className="py-20 md:py-24 px-4 md:px-6 bg-parchment text-maroon-dark">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
         <div className="w-full md:w-1/3">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="aspect-square rounded-2xl overflow-hidden relative"
-          >
-            <img 
-              src={authorPortrait} 
-              alt="Sakshi Shree" 
-              className="w-full h-full object-cover object-center"
-            />
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="aspect-square rounded-2xl overflow-hidden relative bg-black shadow-2xl shadow-black/20"
+            >
+              <img 
+                src={authorPortrait} 
+                alt="Sakshi Shree" 
+                className="w-full h-full object-contain object-center"
+              />
+            </motion.div>
         </div>
         <div className="flex-1">
           <motion.div
